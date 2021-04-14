@@ -14,7 +14,7 @@
       <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light" id="nav-bar">
         <div class="container">
           <a class="navbar-brand" href="#">
-                <img src="images/original_trombones.png" width="30%" height="60%" alt="" id="header-img">
+                <img src="https://s3.amazonaws.com/freecodecamp/original_trombones.png" width="30%" height="60%" alt="" id="header-img">
               </a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -35,7 +35,7 @@
         </div>
       </nav>
     </header>
-    <div class="row">
+    <div class="row" style="padding-top: 80px;">
       <div class="col-12">
         <h4 style="text-align: center;">
           <b>Handcrafted, home-made masterpieces</b>
@@ -47,11 +47,11 @@
       <div class="col-4">
         <form id="form" method="POST" action="https://www.freecodecamp.com/email-submit">
           <div class="form-group">
-            <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email" required>
+            <input type="email" class="form-control" name="email" id="email" aria-describedby="emailHelp" placeholder="Enter email" required>
           </div> <p></p><p></p>
           <div class="form-group">
             <div style="text-align: center;">
-              <button type="submit" id="submit" class="btn btn-warning text-center"><b>GET STARTED</b></button>
+              <input type="submit" id="submit" class="btn btn-warning text-center"  value="GET STARTED"/>
             </div>
           </div>
         </form>
@@ -71,7 +71,8 @@
               </div>
           </div>
       </div> 
-      <div class="row" style="padding-top: 70px;">
+      <a name="features">.</a>
+      <div class="row" style="padding-top: 70px;" id="features">
         <div class="col-4" style="padding-right: 80px;">
           <i class="fas fa-truck"  style="font-size:xxx-large; color: orange; float: right;"></i>
         </div>
@@ -97,17 +98,16 @@
     </div>
 
     <div class="row" style="padding-top: 80px;">
-     
-      <div class="text-center">
-        <iframe width="600" height="400"
-            src="https://youtu.be/y8Yv4pnO7qc">
-        </iframe>
+      <a name="works">.</a>
+      <div class="text-center" id="works">
+        <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/y8Yv4pnO7qc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
     </div>
 
     <!--Pricing start-->
     <div class="container" style="padding-top:80px">
-      <div class="row">
+      <a name="pricing">.</a>
+      <div class="row" id="pricing">
         <!-- Free Tier -->
         <div class="col-lg-4">
           <div class="card mb-5 mb-lg-0">
@@ -178,9 +178,15 @@
       </div>
     </div>
     <!--Pricing table ends-->
-    <h2> 
-      <b>HELLO WORLD!</b>
-    </h2>
+    <footer class="pt-4 my-md-5 pt-md-5 border-top" style="padding-left: 30px; padding-right: 30px;">
+      <div class="row">
+        <div class="col-12" style="text-align: right;">
+          <h5><b>Privacy</b> &nbsp;&nbsp;&nbsp; <b>Terms</b> &nbsp;&nbsp;&nbsp;<b>Contract</b></h5>
+          Copyright 2016, Original Trombones
+        </div>
+       
+      </div>
+    </footer>
     <script  src="js/index.js"></script>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
   </body>
